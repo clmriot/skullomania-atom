@@ -2,4 +2,4 @@
 
 Based on Brackets theme [Skullomania](https://github.com/Brackets-Themes/Skullomania)
 
-![Screenshot](/images/Javascript.png)
+![Screenshot](https://raw.githubusercontent.com/clmriot/skullomania-atom/master/images/Javascript.png)
