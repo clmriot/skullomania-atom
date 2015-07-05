@@ -109,7 +109,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .storage {
-  color: @purple;
+  color: @orange;
   &.modifier, &.type {
     color: @light-gray;
     &.js {
@@ -125,7 +125,7 @@ atom-text-editor .search-results .marker.current-result .region,
   color: @magenta;
 
   &.character.escape {
-    color: @cyan;
+    color: @light-blue;
   }
 
   &.numeric {
@@ -138,11 +138,11 @@ atom-text-editor .search-results .marker.current-result .region,
     }
 
     &.color {
-      color: @cyan;
+      color: @magenta;
     }
 
     &.symbol {
-      color: @green;
+      color: @magenta;
     }
   }
 }
@@ -156,7 +156,7 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @blue;
   }
   &.interpolation {
-    color: darken(@red, 10%);
+    color: darken(@blue, 10%);
   }
 
   &.parameter.function {
@@ -165,8 +165,8 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .invalid.illegal {
-  background-color: @red;
-  color: @syntax-background-color;
+  background-color: darken(@magenta, 40%);
+  color: @blue;
 }
 
 .string {
@@ -220,12 +220,12 @@ atom-text-editor .search-results .marker.current-result .region,
     }
 
     &.bold {
-      color: @light-orange;
+      color: @magenta;
       font-weight: bold;
     }
 
     &.italic {
-      color: @purple;
+      color: @orange;
       font-style: italic;
     }
   }
@@ -262,8 +262,8 @@ atom-text-editor .search-results .marker.current-result .region,
   }
   &.constant {
     color: @light-blue;
-    &.property-value {
-      color: @light-gray;
+    &.property-value, &.mathematical-symbols {
+      color: white;
     }
   }
 }
@@ -300,7 +300,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .meta {
   &.class {
-    color: @light-orange;
+    color: @magenta;
   }
 
   &.link {
@@ -312,11 +312,11 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.selector {
-    color: @purple;
+    color: @orange;
   }
 
   &.separator {
-    background-color: @gray;
+    background-color: @blue-gray;
     color: @syntax-text-color;
   }
   &.function-call {
@@ -338,7 +338,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.changed {
-    color: @purple;
+    color: @orange;
   }
 
   &.deleted {
@@ -346,7 +346,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.italic {
-    color: @purple;
+    color: @orange;
     font-style: italic;
   }
 
@@ -355,7 +355,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.inserted {
-    color: @green;
+    color: @blue;
   }
 
   &.list {
@@ -367,7 +367,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.raw.inline {
-    color: @green;
+    color: @blue;
   }
 }
 
